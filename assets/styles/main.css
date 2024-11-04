@@ -23,7 +23,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0 2rem;
-  margin: 1rem 0;
   gap: 3rem;
   width: 100%;
 }
@@ -31,15 +30,17 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
 }
 
 .navegacao {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 70%;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .navegacao a {
@@ -70,7 +71,7 @@ body {
   background-size: contain;
   background-position: bottom 40px center;
   width: 100%;
-  height: 900px;
+  height: 650px;
   filter: grayscale(100%);
   transition: 0.5s;
 }
@@ -82,17 +83,17 @@ body {
   font-size: 3rem;
 }
 
-.siga {
+.redes-sociais {
   display: flex;
   font-size: 1.3rem;
   gap: 1rem;
 }
 
-.siga button {
+.redes-sociais button {
   cursor: pointer;
 }
 
-.siga button i:hover {
+.redes-sociais button i:hover {
   color: #38a1f7;
 }
 
@@ -135,7 +136,7 @@ body {
 }
 
 .swiper h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .swiper-wrapper {
@@ -186,4 +187,76 @@ body {
 }
 .swiper-button-prev:hover, .swiper-button-next:hover {
   background-color: #38a1f7;
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.projetos h2 {
+  font-size: 2rem;
+}
+
+.projeto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: #2b2b2b;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 300px;
+  height: 320px;
+  cursor: pointer;
+}
+
+.projeto-tags {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.projeto-tags li {
+  background-color: #2b2b2b;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  cursor: default;
+  transition: 0.5s;
+}
+.projeto-tags li:hover {
+  background-color: #38a1f7;
+}
+
+.projetos span {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.projetos span:hover {
+  color: #38a1f7;
+}
+
+.rodape, .rodape > .redes-sociais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+  width: 130%;
+}
+
+.rodape {
+  padding-top: 2rem;
+  border-top: #2b2b2b solid 1px;
+}
+
+.redes-sociais-botoes i {
+  margin: 1rem 1rem 2rem;
 }/*# sourceMappingURL=main.css.map */
