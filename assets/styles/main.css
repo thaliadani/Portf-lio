@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
@@ -55,7 +56,7 @@ body {
   border-radius: 1.5rem;
 }
 
-.modo-escuro {
+.modo-claro {
   cursor: pointer;
 }
 
@@ -99,7 +100,7 @@ body {
 .sobre {
   display: flex;
   flex-direction: column;
-  background-color: #2c2c2c;
+  background-color: #2b2b2b;
   padding: 1rem;
   gap: 1rem;
   border-radius: 1rem;
@@ -127,14 +128,19 @@ body {
 .swiper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+}
+
+.swiper h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .swiper-wrapper {
-  display: flex;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Limita a 3 colunas */
+  width: 120px; /* Limita a largura ao conteúdo */
+  gap: 10px;
 }
 
 .swiper-slide {
@@ -142,7 +148,7 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  background-color: #2c2c2c;
+  background-color: #2b2b2b;
   padding: 1.5rem;
   border-radius: 1rem;
   text-align: justify;
@@ -170,7 +176,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #2c2c2c;
+  background-color: #2b2b2b;
   width: 50px;
   height: 50px;
   border-radius: 50%;
