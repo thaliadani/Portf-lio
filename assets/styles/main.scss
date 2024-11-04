@@ -13,14 +13,14 @@ $box-background-color: #2b2b2b;
     list-style: none;
     background: none;
     border: none;
-    color: $secondary-color;
 }
+
 body{
     font-family: $font;
     background-color: $primary-color;
-    color: $secondary-color;
     width: 100vw;
     height: 100vh;
+    color: $secondary-color;
 }
 
 .container{
@@ -261,12 +261,12 @@ body{
     text-align: center;
     gap: 1rem;
     font-size: 1.1rem;
-    width: 130%;
 }
 
 .rodape{
     padding-top: 2rem;
     border-top: $box-background-color solid 1px;
+    width: 100%;
 }
 
 .redes-sociais-botoes i{

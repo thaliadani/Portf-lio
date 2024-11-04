@@ -6,15 +6,14 @@
   list-style: none;
   background: none;
   border: none;
-  color: #fff;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background-color: #000;
-  color: #fff;
   width: 100vw;
   height: 100vh;
+  color: #fff;
 }
 
 .container {
@@ -249,12 +248,12 @@ body {
   text-align: center;
   gap: 1rem;
   font-size: 1.1rem;
-  width: 130%;
 }
 
 .rodape {
   padding-top: 2rem;
   border-top: #2b2b2b solid 1px;
+  width: 100%;
 }
 
 .redes-sociais-botoes i {
