@@ -137,19 +137,21 @@ body{
 .swiper{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 1rem;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .swiper h2{
     font-size: 1.5rem;
-    margin-bottom: 1rem;
 }
 
 .swiper-wrapper{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); /* Limita a 3 colunas */
-        width: 120px; /* Limita a largura ao conteúdo */
-        gap: 10px;
+    display:  grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 390px;
 }   
 
 .swiper-slide{
