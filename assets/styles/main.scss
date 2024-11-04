@@ -151,8 +151,7 @@ body{
 .swiper-wrapper{
     display:  grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 300px;
-    gap: 1rem;
+    width: 100%;
 }   
 
 .swiper-slide{
