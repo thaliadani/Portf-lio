@@ -182,16 +182,26 @@ body
     &:hover
         background-color: $cor-hover
 
-.projetos
+
+.projetos-container
     display: flex
     flex-direction: column
-    align-items: center
     justify-content: center
-    text-align: center
+    align-items: center
     gap: 1rem
     width: 100%
+    overflow: hidden
     h2
         font-size: 2rem
+    a
+        font-size: 1.1rem
+    
+.projetos
+    display: grid
+    grid-template-rows: repeat(1, 1fr)
+    grid-template-columns: repeat(3, 1fr)
+    width: auto
+    gap: 1rem
 
 .projeto
     display: flex
@@ -202,7 +212,7 @@ body
     padding: 1.5rem
     border-radius: 1rem
     width: 300px
-    height: 320px
+    height: 300px
     cursor: pointer
     h3
         font-size: 1.5rem
