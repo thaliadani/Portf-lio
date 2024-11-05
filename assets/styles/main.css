@@ -4,10 +4,10 @@
 }
 
 :root[data-theme=dark] {
-  --cor-de-fundo: #1f1f1f;
+  --cor-de-fundo: linear-gradient(214deg, rgb(215, 97, 132) 0%, rgb(181, 86, 117) 9%, rgb(93, 59, 77) 29%, rgb(40, 42, 54) 63%);
   --cor-do-texto: #fff;
-  --cor-de-fundo-caixa: #2e2e2e;
-  --cor-linha: #313131;
+  --cor-de-fundo-caixa: #292929;
+  --cor-linha: #3d3d3d;
 }
 
 :root[data-theme=light] {
@@ -35,7 +35,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #1f1f1f;
+  background: linear-gradient(214deg, rgb(215, 97, 132) 0%, rgb(181, 86, 117) 9%, rgb(93, 59, 77) 29%, rgb(40, 42, 54) 63%);
+  background-attachment: fixed;
 }
 
 .container {
@@ -43,7 +44,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
   gap: 3rem;
   width: 100%;
 }
@@ -66,11 +66,11 @@ body {
 .navegacao a {
   text-decoration: none;
   font-size: 1.2rem;
-  padding: 0 0.5rem;
+  padding: 0.2rem 0.5rem;
   transition: 0.5s;
 }
 .navegacao a:hover {
-  color: #1f1f1f;
+  color: #292929;
   background-color: #fff;
   border-radius: 1.5rem;
 }
@@ -119,7 +119,7 @@ body {
 .sobre {
   display: flex;
   flex-direction: column;
-  background-color: #2e2e2e;
+  background-color: #292929;
   padding: 1.5rem;
   gap: 2rem;
   border-radius: 1rem;
@@ -165,17 +165,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
-  background-color: #2e2e2e;
+  gap: 1.5rem;
+  background-color: #292929;
   padding: 1.5rem;
   border-radius: 1rem;
   text-align: justify;
   width: 300px;
   height: 320px;
-  color: #D76184;
+  transition: 0.5s;
 }
-.swiper-slide h3 {
-  font-size: 1.5rem;
+.swiper-slide i:hover {
+  color: #D76184;
 }
 
 .swiper-buttons {
@@ -190,7 +190,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #2e2e2e;
+  background-color: #292929;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -216,7 +216,11 @@ body {
 }
 .projetos-container a {
   font-size: 1.1rem;
+  cursor: pointer;
   margin-top: 2rem;
+}
+.projetos-container a:hover {
+  color: #D76184;
 }
 
 .projetos {
@@ -231,7 +235,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
-  background-color: #2e2e2e;
+  background-color: #292929;
   padding: 1.5rem;
   border-radius: 1rem;
   width: 300px;
@@ -268,13 +272,6 @@ body {
 .projeto-tags li:hover {
   background-color: #D76184;
 }
-.projeto-tags a {
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-.projeto-tags a:hover {
-  color: #D76184;
-}
 
 .rodape, .rodape > .redes-sociais {
   display: flex;
@@ -288,7 +285,7 @@ body {
 
 .rodape {
   padding-top: 2rem;
-  border-top: #313131 solid 1px;
+  border-top: #3d3d3d solid 1px;
   width: 100%;
 }
 
@@ -334,5 +331,8 @@ body {
 @media (min-width: 1500px) {
   .menu {
     width: 70%;
+  }
+  .projetos {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=main.css.map */
