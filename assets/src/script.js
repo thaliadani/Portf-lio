@@ -1,3 +1,22 @@
+mudarTema();
+
+function mudarTema() {
+    const toggleTheme = document.getElementById("botao-tema");
+    const rootHtml = document.documentElement;
+
+    toggleTheme.addEventListener("click", (changeTheme) => {
+        const currentTheme = rootHtml.getAttribute("data-theme");
+
+        changeThemeTo = (newTheme) => {
+            document.documentElement.setAttribute("data-theme", newTheme);
+        };
+
+        currentTheme === "dark" ? rootHtml.setAttribute("data-theme", "light") : rootHtml.setAttribute("data-theme", "dark");
+
+        toggleTheme.classList.toggle("fa-sun");
+        toggleTheme.classList.toggle("fa-moon");
+    });
+}
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
