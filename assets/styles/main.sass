@@ -44,6 +44,9 @@ html[data-theme='light']
 body
     width: 100vw
     height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
     background-color: $cor-de-fundo
 
 .container
@@ -92,7 +95,7 @@ body
     img
         width: 300px
         height: 300px
-        margin-top: 20rem
+        margin-top: 3rem
         border-radius: 50%
         filter: grayscale(100%)
         transition: .5s
@@ -105,6 +108,7 @@ body
     display: flex
     font-size: 1.2rem
     gap: 1rem
+    margin: 1rem 0 5rem
     a
         cursor: pointer
     i:hover
@@ -114,8 +118,8 @@ body
     display: flex
     flex-direction: column
     background-color: $cor-de-fundo-caixa
-    padding: 1rem
-    gap: 1rem
+    padding: 1.5rem
+    gap: 2rem
     border-radius: 1rem
     justify-content: center
     h2
@@ -140,6 +144,7 @@ body
     overflow: hidden
     h2
         font-size: 2rem
+        margin: 3rem 0 5rem
 
 .swiper-wrapper
     display: grid
@@ -192,16 +197,17 @@ body
     width: 100%
     overflow: hidden
     h2
+        margin-bottom: 5rem 
         font-size: 2rem
     a
         font-size: 1.1rem
+        margin-top: 2rem 
     
 .projetos
-    display: grid
-    grid-template-rows: repeat(1, 1fr)
-    grid-template-columns: repeat(3, 1fr)
+    display: flex
+    flex-direction: column
     width: auto
-    gap: 1rem
+    gap: 3rem
 
 .projeto
     display: flex
@@ -216,6 +222,7 @@ body
     cursor: pointer
     h3
         font-size: 1.5rem
+        
     img
         width: 100%
         height: 100%
@@ -259,3 +266,34 @@ body
 
 .redes-sociais-botoes i
     margin: 1rem 1rem 2rem
+
+@media (min-width: 750px)
+    .container
+        width: 90%
+    .navegacao a
+        font-size: 1.5rem
+    .redes-sociais, .rodape .redes-sociais
+        font-size: 1.5rem
+    .sobre p , .sobre a
+        width: 400px
+        font-size: 1.4rem
+    .swiper-wrapper 
+        h3
+            font-size: 1.6rem 
+        p
+            font-size: 1.4rem
+    .swiper-button-next, .swiper-button-prev
+        width: 70px
+        height: 70px
+    .projeto
+        width: 400px
+        height: 450px
+    .projeto h3
+        font-size: 1.8rem
+    .projeto-tags li, .projetos-container a
+        font-size: 1.5rem
+
+
+@media (min-width: 1500px)
+    .menu
+        width: 70%
