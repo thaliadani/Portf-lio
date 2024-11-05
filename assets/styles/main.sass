@@ -1,6 +1,10 @@
 @forward url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
 
 $fonte: 'Poppins', sans-serif
+$cor-de-fundo: #1f1f1f
+$cor-do-texto: #fff
+$cor-de-fundo-caixa: #2e2e2e
+$cor-linha: #313131
 $cor-hover: #D76184
 
 *
@@ -11,7 +15,7 @@ $cor-hover: #D76184
     background: none
     border: none
     text-decoration: none
-    
+
     font-family: $fonte
     color: $cor-do-texto
 
@@ -29,10 +33,10 @@ body
     gap: 3rem
     width: 100%
 
-.menu 
+.menu
     display: flex
     align-items: center
-    justify-content:space-between
+    justify-content: space-between
     gap: 1rem
     margin-top: 1rem
     width: 100%
@@ -42,16 +46,15 @@ body
     align-items: center
     justify-content: space-between
     width: 100%
-
-.navegacao a
-    text-decoration: none
-    font-size: 1.2rem
-    padding: 0 .5rem
-    transition: .5s
-    &:hover
-        color: $cor-de-fundo
-        background-color: $cor-do-texto
-        border-radius: 1.5rem
+    a
+        text-decoration: none
+        font-size: 1.2rem
+        padding: 0 .5rem
+        transition: .5s
+        &:hover
+            color: $cor-de-fundo
+            background-color: $cor-do-texto
+            border-radius: 1.5rem
 
 .principal
     display: flex
@@ -61,34 +64,26 @@ body
     justify-content: space-between
     gap: 1rem
     width: 100%
-
-.principal img
-    width: 300px
-    height: 300px
-    margin-top: 20rem
-    border-radius: 50%
-    filter: grayscale(100%)
-    transition: .5s
-    &:hover
-        filter: grayscale(0)
-
-.principal h1
-    font-size: 3rem
-
+    img
+        width: 300px
+        height: 300px
+        margin-top: 20rem
+        border-radius: 50%
+        filter: grayscale(100%)
+        transition: .5s
+        &:hover
+            filter: grayscale(0)
+    h1
+        font-size: 3rem
 
 .redes-sociais
     display: flex
     font-size: 1.2rem
     gap: 1rem
-
-
-.redes-sociais a
-    cursor: pointer
-
-
-.redes-sociais a i:hover
-    color: $cor-hover
-
+    a
+        cursor: pointer
+    i:hover
+        color: $cor-hover
 
 .sobre
     display: flex
@@ -98,24 +93,18 @@ body
     gap: 1rem
     border-radius: 1rem
     justify-content: center
+    h2
+        font-size: 2rem
+    p
+        font-size: 1.2rem
+        text-align: justify
+    a
+        align-self: flex-end
+        font-size: 1.1rem
+        cursor: pointer
+        &:hover
+            color: $cor-hover
 
-
-.sobre h2
-    font-size: 2rem
-
-
-.sobre p
-    font-size: 1.2rem
-    text-align: justify
-
-
-.sobre a
-    align-self: flex-end
-    font-size: 1.1rem
-    cursor: pointer
-    &:hover
-        color: $cor-hover
-    
 .swiper
     display: flex
     flex-direction: column
@@ -124,17 +113,13 @@ body
     gap: 1rem
     max-width: 100%
     overflow: hidden
-
-
-.swiper h2
-    font-size: 2rem
-
+    h2
+        font-size: 2rem
 
 .swiper-wrapper
-    display:  grid
+    display: grid
     grid-template-columns: repeat(4, 1fr)
     width: 100%
-
 
 .swiper-slide
     display: flex
@@ -147,24 +132,16 @@ body
     text-align: justify
     width: 300px
     height: 320px
-
-
-.swiper-slide i
-    &:hover
+    i &:hover
         color: $cor-hover
-    
-
-
-.swiper-slide h3
-    font-size: 1.5rem
-
+    h3
+        font-size: 1.5rem
 
 .swiper-buttons
     display: flex
     justify-content: center
     align-items: center
     margin-top: .5rem
-
 
 .swiper-button-prev, .swiper-button-next
     display: flex
@@ -179,8 +156,6 @@ body
     cursor: pointer
     &:hover
         background-color: $cor-hover
-    
-
 
 .projetos
     display: flex
@@ -190,11 +165,8 @@ body
     text-align: center
     gap: 1rem
     width: 100%
-
-
-.projetos h2
+    h2
     font-size: 2rem
-
 
 .projeto
     display: flex
@@ -207,40 +179,33 @@ body
     width: 300px
     height: 320px
     cursor: pointer
-
-
-.projeto img
-    width: 100%
-    height: 100%
-    object-fit: cover
-    border-radius: 1rem
-    transition: .5s
-    &:hover
-        transform: scale(1.1)
-    
-
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-radius: 1rem
+        transition: .5s
+        &:hover
+            transform: scale(1.1)
 
 .projeto-tags
     display: flex
     justify-content: space-between
     gap: .5rem
+    li
+        background-color: $cor-de-fundo-caixa
+        padding: .3rem
+        border-radius: .5rem
+        cursor: default
+        transition: .5s
+        &:hover
+            background-color: $cor-hover
+    a
+        font-size: 1.1rem
+        cursor: pointer
+        &:hover
+            color: $cor-hover
 
-
-.projeto-tags li
-    background-color: $cor-de-fundo-caixa
-    padding: .3rem
-    border-radius: .5rem
-    cursor:default
-    transition: .5s
-    &:hover
-        background-color: $cor-hover
-    
-.projetos a
-    font-size: 1.1rem
-    cursor: pointer
-    &:hover
-        color: $cor-hover
-    
 .rodape, .rodape>.redes-sociais
     display: flex
     flex-direction: column
@@ -255,7 +220,5 @@ body
     border-top: $cor-linha solid 1px
     width: 100%
 
-
 .redes-sociais-botoes i
     margin: 1rem 1rem 2rem
-
