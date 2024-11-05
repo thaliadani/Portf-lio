@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ddf9f3190c.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="./assets/imgs/code.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/imgs/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/main.css">
     <title>Portfólio</title>
 </head>
@@ -14,31 +14,33 @@
 
     <main class="container">
         <nav class="menu">
-            <img src="./assets/imgs/code.png" alt="logo">
+            <img src="./assets/imgs/logo.png" alt="logo">
 
             <ul class="navegacao">
                 <li>
-                    <a href="">Início</a>
+                    <a href="./index.html">Início</a>
                 </li>
                 <li>
-                    <a href="">Sobre</a>
+                    <a href="./sobre.html">Sobre</a>
                 </li>
                 <li>
-                    <a href="">Projetos</a>
+                    <a href="./projetos.html">Projetos</a>
                 </li>
             </ul>
 
-            <button class="modo-claro"><i class="fa-solid fa-sun fa-2xl"></i></button>
+            <button id="botao-tema"><i class="fa-solid fa-sun fa-2xl"></i></button>
         </nav>
 
         <section class="principal">
 
-            <h1>Eu sou Thalia, FrontEnd Developer</h1>
+            <h1>Olá eu sou Thalia, FrontEnd Developer</h1>
+
+            <img src="./assets/imgs/foto.png" alt="">
 
             <section class="redes-sociais">
                 <span>Siga-me:</span>
-                <button class="linkedin"><i class="fa-brands fa-linkedin-in fa-2xl"></i></button>
-                <button class="github"><i class="fa-brands fa-github fa-2xl"></i></button>
+                <a class="linkedin" href="https://www.linkedin.com/in/thalia-danielle-21b968221/"><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+                <a class="github " href="https://github.com/thaliadani"><i class="fa-brands fa-github fa-xl"></i></a>
             </section>
 
         </section>
@@ -46,12 +48,11 @@
         <section class="sobre">
             <h2>Sobre</h2>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati, hic ipsa voluptates beatae ullam quos, pariatur
-                dolore vitae ducimus ex doloremque ratione iusto. Vitae minima
-                nam consequuntur vel cupiditate. Saepe!</p>
+            <p>Meu nome é Thalia, tenho 23 anos 
+                e atualmente estou estudando JavaScript 
+                e desenvolvimento de sistemas na Proz.</p>
 
-            <span>Mais sobre mim</span>
+            <a href="./sobre.html">Mais sobre mim</a>
         </section>
 
         <section class="swiper">
@@ -66,49 +67,35 @@
                     </div>
 
                     <h3>HTML & CSS</h3>
-                    <p>Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit.
-                        Ea dolor officiis ratione eaque
-                        est officia corrupti excepturi.
-                        Tempora dolore sequi perspiciatis
-                        qui eum nostrum ad autem, omnis
-                        accusamus? Nulla, omnis!</p>
+                    <p>Ferramentas essenciais para a criação e 
+                        estilização de páginas web. HTML 
+                        estrutura o conteúdo, enquanto CSS 
+                        define a aparência visual.</p>
                 </div>
 
                 <div class="swiper-slide">
                     <i class="fa-brands fa-js fa-2xl"></i>
                     <h3>Javascript</h3>
-                    <p>Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit.
-                        Ea dolor officiis ratione eaque
-                        est officia corrupti excepturi.
-                        Tempora dolore sequi perspiciatis
-                        qui eum nostrum ad autem, omnis
-                        accusamus? Nulla, omnis!</p>
+                    <p> Linguagem de programação que permite a 
+                        criação de interatividade e dinamismo em 
+                        páginas web.</p>
                 </div>
 
                 <div class="swiper-slide">
                     <i class="fa-brands fa-git-alt fa-2xl"></i>
                     <h3>Git</h3>
-                    <p>Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit.
-                        Ea dolor officiis ratione eaque
-                        est officia corrupti excepturi.
-                        Tempora dolore sequi perspiciatis
-                        qui eum nostrum ad autem, omnis
-                        accusamus? Nulla, omnis!</p>
+                    <p>Sistema de controle de versão que facilita 
+                        o gerenciamento e a colaboração em 
+                        projetos de desenvolvimento de software.</p>
                 </div>
 
                 <div class="swiper-slide">
                     <i class="fa-brands fa-sass fa-2xl"></i>
                     <h3>Sass</h3>
-                    <p>Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit.
-                        Ea dolor officiis ratione eaque
-                        est officia corrupti excepturi.
-                        Tempora dolore sequi perspiciatis
-                        qui eum nostrum ad autem, omnis
-                        accusamus? Nulla, omnis!</p>
+                    <p>Pré-processador CSS que adiciona 
+                        funcionalidades como variáveis, aninhamento 
+                        e mixins, tornando o CSS mais poderoso e 
+                        fácil de manter.</p>
                 </div>
             </div>
 
@@ -123,14 +110,16 @@
 
             <div class="projeto">
                 <h3>Alura Books</h3>
+                <a href="https://alura-books-olive.vercel.app/"><img src="./assets/imgs/alura-books.jpeg" alt="alura books"></a>
                 <ul class="projeto-tags">
-                    <li>HTML, CSS</li>
+                    <li>HTML e CSS</li>
                     <li>Alura</li>
                 </ul>
             </div>
 
             <div class="projeto">
                 <h3>Multiverso do Spider Man</h3>
+                <a href="https://multiverso-spiderman.vercel.app/"><img src="./assets/imgs/multiverso-spiderman.jpeg" alt="multiverso spiderman"></a>
                 <ul class="projeto-tags">
                     <li>HTML, CSS e JS</li>
                     <li>DIO</li>
@@ -139,21 +128,22 @@
 
             <div class="projeto">
                 <h3>Landing Page Stranger Things</h3>
+                <a href="https://landing-page-stranger-things.vercel.app/"><img src="./assets/imgs/landing-page-stranger-things.jpeg" alt="Landing Page Stranger Things"></a>
                 <ul class="projeto-tags">
                     <li>HTML, CSS e JS</li>
                     <li>DIO</li>
                 </ul>
             </div>
 
-            <span>Navegue pelos meus outros projetos -></span>
+            <a href="./projetos.html">Outros projetos</a>
         </section>
 
         <footer class="rodape">
             <section class="redes-sociais">
                 <span>Minhas redes sociais:</span>
                 <div class="redes-sociais-botoes">
-                    <a><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
-                    <a><i class="fa-brands fa-github fa-2xl"></i></a>
+                    <a href="https://www.linkedin.com/in/thalia-danielle-21b968221/" ><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+                    <a href="https://github.com/thaliadani"><i class="fa-brands fa-github fa-xl"></i></a>
                 </div>
 
             </section>
